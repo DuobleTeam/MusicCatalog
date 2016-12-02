@@ -1,1 +1,2 @@
-# MusicCatalog
+# MusicCatalog 
+SPA with JavaScript ,jQuery, Kinvey
