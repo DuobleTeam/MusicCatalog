@@ -1,2 +1,2 @@
 # MusicCatalog 
-SPA with JavaScript ,jQuery, Kinvey
+SPA with JavaScript ,jQuery, REST AJAX, Kinvey
