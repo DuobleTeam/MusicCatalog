@@ -103,7 +103,8 @@ function startApp() {
     function registerUser() {
         let userData = {
             username: $('#formRegister input[name=username]').val(),
-            password: $('#formRegister input[name=passwd]').val()
+            password: $('#formRegister input[name=passwd]').val(),
+			/* confirmPassword: $('#formRegister input[name=confirm-passwd]').val() */
         };
 
         $.ajax({
@@ -118,7 +119,7 @@ function startApp() {
         function registerSuccess(userInfo) {
             saveAuthInSession(userInfo);
             showHideMenuLinks();
-            listBooks();
+            listSongs();
             showInfo('User registration successful.');
         }
     }
@@ -129,7 +130,7 @@ function startApp() {
         let userId = userInfo._id;
         sessionStorage.setItem('userId', userId);
         let username = userInfo.username;
-        $('#loggedInUser').text("Welcome, " + username + "!");
+        $('#loggedInUser').text("Welcome to Hell, " + username + "!");
     }
 
     function handleAjaxError(response) {
@@ -221,7 +222,7 @@ function startApp() {
 
     function createSong() {
         let songData = {
-            title: $('#formCreateSong input[name=title]').val(),
+            title:$('#formCreateSong input[name=title]').val(),
             singer: $('#formCreateSong input[name=author]').val(),
             album: $('#formCreateSong textarea[name=descr]').val()
         };

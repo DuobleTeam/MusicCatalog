@@ -47,8 +47,9 @@ table th {
 
 table td {
     padding: 5px 10px;
-    background: #eee979;
+    background: #6ae5ef;
 }
+
 #infoBox, #errorBox, #loadingBox {
     width: 80%;
     margin: 10px auto;
@@ -96,11 +97,13 @@ input[type=text],input[type=password] {
 }
 input[type=button]{
     border-radius: 5px;
-    background-color: khaki;
+    background-color: #56c4d7;
     font-size: 1.1em;
+
 }
 td a{
-   color: #FF5500;
+   color: #FF0900;
+   text-decoration:none;
 }
 footer img{
     margin: 5px;
