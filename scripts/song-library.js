@@ -96,7 +96,7 @@ function startApp() {
             saveAuthInSession(userInfo);
             showHideMenuLinks();
             listSongs();
-            showInfo('Login successful.');
+            showInfo('You are Loged in.');
         }
     }
 
@@ -185,7 +185,7 @@ function startApp() {
             } else {
                 let songsTable = $('<table>')
                     .append($('<tr>')
-                        .append('<th>TITLE</th><th>SINGER(Band)</th>', '<th>ALBUM</th><th>ACTION</th>'));
+                        .append('<th>TITLE</th><th>ARTIST(Band)</th>', '<th>ALBUM</th><th>ACTION</th>'));
 
                 for(let song of songs){
                     appendSongRow(song, songsTable);
