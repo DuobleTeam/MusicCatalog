@@ -10,6 +10,7 @@
 #menu img{
     float: left;
 }
+
 #menu>#loggedInUser {
     float: right;
     margin-right: 10px;
